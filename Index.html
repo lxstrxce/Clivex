@@ -1,0 +1,199 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Clivex — LIVE 2025</title>
+  <style>
+    html, body {
+      margin: 0;
+      padding: 0;
+      font-family: 'Segoe UI', sans-serif;
+      overflow-x: hidden;
+      color: white;
+    }
+
+    /* === Видео фон как в Apple Music === */
+    .bg-video {
+      position: fixed;
+      top: 0;
+      left: 0;
+      width: 100vw;
+      height: 100vh;
+      object-fit: cover;
+      z-index: -1;
+      filter: brightness(0.3) blur(4px);
+    }
+
+    header, section, .contacts, footer {
+      position: relative;
+      z-index: 2;
+      padding: 20px;
+      backdrop-filter: blur(10px);
+    }
+
+    header {
+      text-align: center;
+      padding-top: 60px;
+    }
+
+    h1 {
+      font-size: 44px;
+      color: #ffffff;
+      margin-bottom: 10px;
+    }
+
+    .tagline {
+      font-size: 16px;
+      font-style: italic;
+      color: #7ec8e3;
+    }
+
+    .concert {
+      background-color: rgba(0, 0, 0, 0.4);
+      border-left: 4px solid #1fc9ff;
+      margin-bottom: 25px;
+      padding: 20px;
+      border-radius: 10px;
+    }
+
+    .concert h2 {
+      font-size: 20px;
+      color: #7ec8e3;
+    }
+
+    .concert p {
+      margin: 5px 0;
+      color: #ccc;
+    }
+
+    .youtube-preview {
+      margin: 40px auto;
+      max-width: 90%;
+    }
+
+    .youtube-preview iframe {
+      width: 100%;
+      height: 200px;
+      border: none;
+      border-radius: 12px;
+      box-shadow: 0 0 10px rgba(31, 201, 255, 0.4);
+    }
+
+    .wrapped {
+      margin: 40px auto;
+      text-align: center;
+    }
+
+    .wrapped img {
+      max-width: 90%;
+      border-radius: 12px;
+      box-shadow: 0 0 20px rgba(255, 255, 255, 0.2);
+    }
+
+    .wrapped p {
+      color: #a0a4b8;
+      font-size: 14px;
+      margin-top: 12px;
+    }
+
+    .contacts {
+      padding: 20px;
+      margin: 40px 20px;
+      border-radius: 8px;
+      text-align: center;
+      background-color: rgba(0, 0, 0, 0.4);
+    }
+
+    .contacts p {
+      font-size: 14px;
+      margin: 10px 0;
+      color: #ffffff;
+    }
+
+    footer {
+      text-align: center;
+      padding: 30px 10px;
+      font-size: 12px;
+      color: #aaa;
+    }
+
+    /* 🎨 Цветовая адаптация */
+    @media (prefers-color-scheme: light) {
+      body {
+        color: #1a1b2f;
+      }
+      .concert, .contacts {
+        background-color: rgba(255, 255, 255, 0.85);
+        color: #1a1b2f;
+      }
+      .wrapped p {
+        color: #333;
+      }
+    }
+  </style>
+</head>
+<body>
+
+<!-- 🎬 ВИДЕО ФОН -->
+<video autoplay muted loop class="bg-video">
+  <source src="your-video.mp4" type="video/mp4">
+  Твой браузер не поддерживает видео фон.
+</video>
+
+<!-- 🎤 ЗАГОЛОВОК -->
+<header>
+  <h1>Clivex</h1>
+  <div class="tagline">2025 Tour — живи под драмом</div>
+</header>
+
+<!-- 🗓️ БЛОКИ КОНЦЕРТОВ -->
+<section>
+  <div class="concert">
+    <h2>Новосибирск — 27 июля</h2>
+    <p>Клуб "Форма", 21:00</p>
+    <p>Спец-гость: DJ ArgenZ</p>
+  </div>
+
+  <div class="concert">
+    <h2>Алматы — 3 августа</h2>
+    <p>Underground Stage, 20:30</p>
+    <p>Билеты от 3500 ₸</p>
+  </div>
+
+  <div class="concert">
+    <h2>Усть-Каменогорск — 10 августа</h2>
+    <p>LOFT Music Hall, 19:00</p>
+    <p>Закрытие тура</p>
+  </div>
+</section>
+
+<!-- 📺 YOUTUBE-ПРЕВЬЮ -->
+<div class="youtube-preview">
+  <iframe src="https://www.youtube.com/embed/6gP6oaUe6AI?autoplay=0&mute=1&controls=1&loop=1"
+          allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+          allowfullscreen>
+  </iframe>
+</div>
+
+<!-- 📈 W R A P P E D -->
+<div class="wrapped">
+  <h2 style="color:#1fc9ff; margin-bottom: 15px;">2024 Spotify Wrapped</h2>
+  <img src="wrapped-stats.jpeg" alt="Spotify Wrapped LXSTRXCE">
+  <p>126 000 прослушиваний · 47 500 слушателей · 134 страны</p>
+</div>
+
+<!-- 📞 КОНТАКТЫ -->
+<div class="contacts">
+  <p>📩 Почта: <strong>your@email.com</strong></p>
+  <p>📲 Telegram: <strong>@yourhandle</strong></p>
+  <p>🌐 Instagram: <strong>@clivex_music</strong></p>
+</div>
+
+<!-- ⚡ ПОДВАЛ -->
+<footer>
+  © 2025 Clivex — твой драм, твой вайб.
+</footer>
+
+</body>
+</html>
